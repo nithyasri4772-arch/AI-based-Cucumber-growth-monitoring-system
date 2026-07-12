@@ -1,0 +1,8 @@
+# YOLOv8 Dataset Configuration Template
+path: ../dataset # path relative to the train script location
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: cucumber

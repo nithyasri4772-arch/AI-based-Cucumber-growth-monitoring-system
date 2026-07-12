@@ -1,0 +1,61 @@
+project:
+  name: "IoT AI Cucumber Detection"
+  mode: "simulation"  # simulation | hardware
+
+capture:
+  angles: ["top", "left", "right"]
+  output_dir: "data/raw"
+  image_width: 640
+  image_height: 480
+  # Hardware Control
+  hardware_trigger_enabled: false
+  esp32_control_url: "http://192.168.1.50"
+  servo_angles:
+    top: 90
+    left: 45
+    right: 135
+  fan_delay_sec: 2.0
+
+sensors:
+  source: "simulated" # simulated | esp32
+  esp32_endpoint: "http://192.168.1.50/sensor"
+
+vision:
+  yolo_model_path: "models/yolo/cucumber.pt"
+  confidence_threshold: 0.4
+  use_mock_when_missing: true
+  use_opencv_filter: true  # Use HSV filter as backup/overlay
+
+measurement:
+  marker_real_cm: 5.0
+  marker_pixel_size: 120.0
+
+prediction:
+  ideal_harvest_cm: 15.0  # Harvest target length
+  min_growth_cm_per_day: 1.0 # Standard growth @ <25C
+  max_growth_cm_per_day: 2.5 # Rapid growth @ >32C
+  baseline_growth_cm_per_day: 1.8 # Normal growth @ 25-30C
+
+dashboard:
+  refresh_interval_sec: 10
+  show_opencv_masks: true
+  thingspeak_channel_id: "3337036"  # Integrated your Channel ID
+
+alerts:
+  blynk_enabled: false
+  blynk_token: "YOUR_BLYNK_TOKEN"
+  mobile_notify: true
+  led_enabled: true
+  buzzer_enabled: true
+
+cloud:
+  log_file: "data/logs/daily_growth_log.csv"
+  # ThingSpeak config
+  thingspeak_enabled: true
+  thingspeak_write_api_key: "SWFMS1TP7U4N5H56"  
+  thingspeak_base_url: "https://api.thingspeak.com/update.json"
+
+  # Firebase config
+  firebase_enabled: true
+  firebase_service_account_key: "firebase_key.json"
+  firebase_db_url: "https://cucumber-ai-farn-default-rtdb.firebaseio.com/"

@@ -1,0 +1,162 @@
+2026-04-11 08:25:49,266 [INFO] Starting Cucumber Detection Pipeline...
+2026-04-11 08:25:49,273 [INFO] Capturing images for angles: ['top', 'left', 'right']
+2026-04-11 08:25:49,275 [INFO] Sensor Data: {'temperature_c': 29.01, 'humidity_percent': 56.42}
+2026-04-11 08:25:49,315 [ERROR] Pipeline failed: name 'random' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Asus\iot_ai_cucumber_project\src\main.py", line 74, in run_pipeline
+    detections = detector.detect(images)
+  File "C:\Users\Asus\iot_ai_cucumber_project\src\vision\detector.py", line 91, in detect
+    if random.random() > 0.4:
+       ^^^^^^
+NameError: name 'random' is not defined. Did you forget to import 'random'?
+2026-04-11 08:26:00,240 [INFO] Starting Cucumber Detection Pipeline...
+2026-04-11 08:26:00,247 [INFO] Capturing images for angles: ['top', 'left', 'right']
+2026-04-11 08:26:00,249 [INFO] Sensor Data: {'temperature_c': 27.52, 'humidity_percent': 84.13}
+2026-04-11 08:26:00,269 [INFO] Detected 2 fruit(s) across all angles.
+2026-04-11 08:26:00,272 [ERROR] Pipeline failed: 'charmap' codec can't encode character '\u2705' in position 42: character maps to <undefined>
+Traceback (most recent call last):
+  File "C:\Users\Asus\iot_ai_cucumber_project\src\main.py", line 95, in run_pipeline
+    print(f" Angle: {item['angle']:<6} | Size: {item['size_cm']:>5} cm | Status: {status}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 42: character maps to <undefined>
+2026-04-11 08:26:58,332 [INFO] Starting Cucumber Detection Pipeline...
+2026-04-11 08:26:58,339 [INFO] Capturing images for angles: ['top', 'left', 'right']
+2026-04-11 08:26:58,340 [INFO] Sensor Data: {'temperature_c': 24.87, 'humidity_percent': 80.48}
+2026-04-11 08:26:58,353 [INFO] Detected 3 fruit(s) across all angles.
+2026-04-11 08:35:05,243 [INFO] Starting Cucumber Detection Pipeline...
+2026-04-11 08:35:05,250 [INFO] Capturing images for angles: ['top', 'left', 'right']
+2026-04-11 08:35:05,252 [INFO] Sensor Data: {'temperature_c': 33.83, 'humidity_percent': 69.21}
+2026-04-11 08:35:05,267 [INFO] Detected 3 fruit(s) across all angles.
+2026-04-11 08:47:51,059 [INFO] Starting Cucumber Detection Pipeline...
+2026-04-11 08:47:51,067 [INFO] Capturing images for angles: ['top', 'left', 'right']
+2026-04-11 08:47:51,069 [INFO] Sensor Data: {'temperature_c': 25.19, 'humidity_percent': 67.3}
+2026-04-11 08:47:51,081 [INFO] Detected 2 fruit(s) across all angles.
+2026-04-11 09:46:00,632 [INFO] Starting Cucumber Detection Pipeline...
+2026-04-11 09:46:00,638 [INFO] Capturing images for angles: ['top', 'left', 'right']
+2026-04-11 09:46:00,640 [INFO] Sensor Data: {'temperature_c': 24.5, 'humidity_percent': 75.99}
+2026-04-11 09:46:00,673 [INFO] Detected 3 fruit(s) across all angles.
+2026-04-11 09:46:00,677 [ERROR] Pipeline failed: name 'cv2' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Asus\iot_ai_cucumber_project\src\main.py", line 85, in run_pipeline
+    cv2.imwrite(str(processed_dir / f"latest_{angle}.jpg"), ani_img)
+    ^^^
+NameError: name 'cv2' is not defined
+2026-04-11 09:46:20,932 [INFO] Starting Cucumber Detection Pipeline...
+2026-04-11 09:46:20,940 [INFO] Capturing images for angles: ['top', 'left', 'right']
+2026-04-11 09:46:20,941 [INFO] Sensor Data: {'temperature_c': 27.16, 'humidity_percent': 87.43}
+2026-04-11 09:46:20,974 [INFO] Detected 3 fruit(s) across all angles.
+2026-04-11 09:46:21,009 [INFO] Visual proof saved to data\processed
+2026-04-11 09:48:25,468 [INFO] Starting Cucumber Detection Pipeline...
+2026-04-11 09:48:25,474 [INFO] Capturing images for angles: ['top', 'left', 'right']
+2026-04-11 09:48:25,476 [INFO] Sensor Data: {'temperature_c': 26.95, 'humidity_percent': 61.14}
+2026-04-11 09:48:25,507 [INFO] Detected 2 fruit(s) across all angles.
+2026-04-11 09:48:25,534 [INFO] Visual proof saved to data\processed
+2026-04-11 11:08:53,321 [INFO] Starting Cucumber Detection Pipeline...
+2026-04-11 11:08:53,327 [ERROR] Pipeline failed: CloudLogConfig.__init__() got an unexpected keyword argument 'firebase_enabled'
+Traceback (most recent call last):
+  File "C:\Users\Asus\iot_ai_cucumber_project\src\main.py", line 56, in run_pipeline
+    cloud_cfg = CloudLogConfig(**settings["cloud"])
+TypeError: CloudLogConfig.__init__() got an unexpected keyword argument 'firebase_enabled'
+2026-04-11 11:09:54,093 [INFO] Starting Cucumber Detection Pipeline...
+2026-04-11 11:09:54,100 [INFO] Capturing images for angles: ['top', 'left', 'right']
+2026-04-11 11:09:54,103 [INFO] Sensor Data: {'temperature_c': 28.49, 'humidity_percent': 58.15}
+2026-04-11 11:09:54,359 [INFO] Detected 3 fruit(s) across all angles.
+2026-04-11 11:09:54,393 [INFO] Visual proof saved to data\processed
+2026-04-11 11:20:09,109 [INFO] Starting Cucumber Detection Pipeline...
+2026-04-11 11:20:09,122 [INFO] Capturing images for angles: ['top', 'left', 'right']
+2026-04-11 11:20:09,122 [INFO] Processing angle: top
+2026-04-11 11:20:09,126 [INFO] Processing angle: left
+2026-04-11 11:20:09,128 [INFO] Processing angle: right
+2026-04-11 11:20:09,129 [INFO] Sensor Data: {'temperature_c': 24.08, 'humidity_percent': 78.73}
+2026-04-11 11:20:09,441 [INFO] Detected 1 fruit(s) across all angles.
+2026-04-11 11:20:09,473 [INFO] Visual proof saved to data\processed
+2026-04-11 22:44:46,202 [INFO] Starting Cucumber Detection Pipeline...
+2026-04-11 22:44:46,380 [INFO] Capturing images for angles: ['top', 'left', 'right']
+2026-04-11 22:44:46,380 [INFO] Processing angle: top
+2026-04-11 22:44:46,384 [INFO] Processing angle: left
+2026-04-11 22:44:46,385 [INFO] Processing angle: right
+2026-04-11 22:44:46,385 [INFO] Sensor Data: {'temperature_c': 25.0, 'humidity_percent': 88.86}
+2026-04-11 22:44:55,645 [INFO] Detected 2 fruit(s) across all angles.
+2026-04-11 22:44:55,676 [INFO] Visual proof saved to data\processed
+2026-04-11 23:59:53,458 [INFO] Starting Cucumber Detection Pipeline...
+2026-04-11 23:59:53,607 [WARNING] [Firebase] Key file not found at firebase_key.json. Firebase disabled.
+2026-04-11 23:59:53,608 [INFO] Capturing images for angles: ['top', 'left', 'right']
+2026-04-11 23:59:53,609 [INFO] Processing angle: top
+2026-04-11 23:59:53,613 [INFO] Processing angle: left
+2026-04-11 23:59:53,614 [INFO] Processing angle: right
+2026-04-11 23:59:53,615 [INFO] Sensor Data: {'temperature_c': 28.56, 'humidity_percent': 76.01}
+2026-04-11 23:59:58,870 [INFO] Detected 2 fruit(s) across all angles.
+2026-04-11 23:59:58,905 [INFO] Visual proof saved to data\processed
+2026-04-12 09:38:59,546 [INFO] Starting Cucumber Detection Pipeline...
+2026-04-12 09:39:00,434 [INFO] [Firebase] Initialized successfully.
+2026-04-12 09:39:00,435 [INFO] Capturing images for angles: ['top', 'left', 'right']
+2026-04-12 09:39:00,436 [INFO] Processing angle: top
+2026-04-12 09:39:00,450 [INFO] Processing angle: left
+2026-04-12 09:39:00,453 [INFO] Processing angle: right
+2026-04-12 09:39:00,454 [INFO] Sensor Data: {'temperature_c': 29.07, 'humidity_percent': 61.49}
+2026-04-12 09:39:12,860 [INFO] Detected 2 fruit(s) across all angles.
+2026-04-12 09:39:12,929 [INFO] Visual proof saved to data\processed
+2026-04-12 09:39:15,612 [INFO] [Firebase] Data synced successfully to detections/2026-04-12_09-39-14
+2026-04-12 10:23:25,408 [INFO] Starting Cucumber Detection Pipeline...
+2026-04-12 10:23:25,697 [INFO] [Firebase] Initialized successfully.
+2026-04-12 10:23:25,698 [INFO] Capturing images for angles: ['top', 'left', 'right']
+2026-04-12 10:23:25,699 [INFO] Processing angle: top
+2026-04-12 10:23:25,704 [INFO] Processing angle: left
+2026-04-12 10:23:25,705 [INFO] Processing angle: right
+2026-04-12 10:23:25,706 [INFO] Sensor Data: {'temperature_c': 27.64, 'humidity_percent': 86.16}
+2026-04-12 10:23:31,878 [INFO] Detected 2 fruit(s) across all angles.
+2026-04-12 10:23:31,918 [INFO] Visual proof saved to data\processed
+2026-04-12 10:23:34,426 [INFO] [Firebase] Data synced successfully to detections/2026-04-12_10-23-33
+2026-04-16 18:10:26,701 [INFO] Starting Cucumber Detection Pipeline...
+2026-04-16 18:10:27,224 [INFO] [Firebase] Initialized successfully.
+2026-04-16 18:10:27,225 [INFO] Capturing images for angles: ['top', 'left', 'right']
+2026-04-16 18:10:27,226 [INFO] Processing angle: top
+2026-04-16 18:10:27,230 [INFO] Processing angle: left
+2026-04-16 18:10:27,231 [INFO] Processing angle: right
+2026-04-16 18:10:27,232 [INFO] Sensor Data: {'temperature_c': 33.6, 'humidity_percent': 75.08}
+2026-04-16 18:10:36,205 [INFO] Detected 1 fruit(s) across all angles.
+2026-04-16 18:10:36,249 [INFO] Visual proof saved to data\processed
+2026-04-16 18:10:43,152 [INFO] [Firebase] Data synced successfully to detections/2026-04-16_18-10-38
+2026-04-20 13:59:29,323 [INFO] Starting Cucumber Detection Pipeline...
+2026-04-20 13:59:29,629 [INFO] [Firebase] Initialized successfully.
+2026-04-20 13:59:29,630 [INFO] Capturing images for angles: ['top', 'left', 'right']
+2026-04-20 13:59:29,631 [INFO] Processing angle: top
+2026-04-20 13:59:29,635 [INFO] Processing angle: left
+2026-04-20 13:59:29,635 [INFO] Processing angle: right
+2026-04-20 13:59:29,636 [INFO] Sensor Data: {'temperature_c': 32.58, 'humidity_percent': 87.27}
+2026-04-20 13:59:35,521 [INFO] Detected 1 fruit(s) across all angles.
+2026-04-20 13:59:35,556 [INFO] Visual proof saved to data\processed
+2026-04-20 13:59:38,290 [INFO] [Firebase] Data synced successfully to detections/2026-04-20_13-59-36
+2026-04-21 19:45:27,136 [INFO] Starting Cucumber Detection Pipeline...
+2026-04-21 19:45:27,378 [INFO] [Firebase] Initialized successfully.
+2026-04-21 19:45:27,379 [INFO] Capturing images for angles: ['top', 'left', 'right']
+2026-04-21 19:45:27,380 [INFO] Processing angle: top
+2026-04-21 19:45:27,385 [INFO] Processing angle: left
+2026-04-21 19:45:27,386 [INFO] Processing angle: right
+2026-04-21 19:45:27,387 [INFO] Sensor Data: {'temperature_c': 29.88, 'humidity_percent': 59.38}
+2026-04-21 19:45:33,325 [INFO] Detected 1 fruit(s) across all angles.
+2026-04-21 19:45:33,368 [INFO] Visual proof saved to data\processed
+2026-04-21 19:45:37,261 [INFO] [Firebase] Data synced successfully to detections/2026-04-21_19-45-35
+2026-06-18 07:09:49,444 [INFO] Starting Cucumber Detection Pipeline...
+2026-06-18 07:09:49,910 [INFO] [Firebase] Initialized successfully.
+2026-06-18 07:09:49,911 [INFO] Capturing images for angles: ['top', 'left', 'right']
+2026-06-18 07:09:49,911 [INFO] Processing angle: top
+2026-06-18 07:09:49,919 [INFO] Processing angle: left
+2026-06-18 07:09:49,920 [INFO] Processing angle: right
+2026-06-18 07:09:49,921 [INFO] Sensor Data: {'temperature_c': 33.12, 'humidity_percent': 86.34}
+2026-06-18 07:09:56,064 [INFO] Detected 2 fruit(s) across all angles.
+2026-06-18 07:09:56,088 [INFO] Visual proof saved to data\processed
+2026-06-18 07:09:59,083 [INFO] [Firebase] Data synced successfully to detections/2026-06-18_07-09-57
+2026-06-18 10:17:10,647 [INFO] Starting Cucumber Detection Pipeline...
+2026-06-18 10:17:10,925 [INFO] [Firebase] Initialized successfully.
+2026-06-18 10:17:10,926 [INFO] Capturing images for angles: ['top', 'left', 'right']
+2026-06-18 10:17:10,926 [INFO] Processing angle: top
+2026-06-18 10:17:10,932 [INFO] Processing angle: left
+2026-06-18 10:17:10,933 [INFO] Processing angle: right
+2026-06-18 10:17:10,935 [INFO] Sensor Data: {'temperature_c': 25.02, 'humidity_percent': 57.86}
+2026-06-18 10:17:17,378 [INFO] Detected 2 fruit(s) across all angles.
+2026-06-18 10:17:17,404 [INFO] Visual proof saved to data\processed
+2026-06-18 10:17:20,897 [INFO] [Firebase] Data synced successfully to detections/2026-06-18_10-17-18
