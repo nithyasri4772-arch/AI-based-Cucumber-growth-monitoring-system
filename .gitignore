@@ -1,0 +1,36 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Local / secret overrides (optional: keep secrets out of Git)
+configs/settings.local.yaml
+.env
+*.pem
+firebase_key.json
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Logs and large artifacts (optional: uncomment if you do not want logs in Git)
+# data/logs/
+# data/raw/
+# models/yolo/*.pt
+
+# Training runs (YOLO)
+runs/
